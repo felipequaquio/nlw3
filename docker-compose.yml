@@ -1,0 +1,27 @@
+services:
+  server:
+    container_name: "server"
+    build:
+      context: ./backend
+    ports:
+      - "3333:3333"
+    volumes:
+      - ./backend:/app
+      - nodemodulesserver:/app/node_modules
+      - db:/app/src/database/sqlite
+      - uploads:/app/uploads
+  web:
+    container_name: "web"
+    build:
+      context: ./web
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    volumes:
+      - ./web:/app
+      - nodemodulesweb:/app/node_modules
+volumes:
+  nodemodulesserver: {}
+  nodemodulesweb: {}
+  db: {}
+  uploads: {}
