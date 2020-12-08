@@ -8,7 +8,6 @@ export default {
   async index(request: Request, response: Response) {
     const orphanagesRepository = getRepository(Orphanage)
     const orphanages = await orphanagesRepository.find({ relations: ["images"] })
-
     return response.json(orphanageView.renderMany(orphanages))
   },
   async create(request: Request, response: Response) {
@@ -37,7 +36,7 @@ export default {
       about,
       instructions,
       opening_hours,
-      opening_on_weekends,
+      opening_on_weekends: opening_on_weekends === 'true',
       images
     }
 
