@@ -1,6 +1,8 @@
 # Home
 Application created for study the Javascript stack (Node.js, React and React Native)
 
+This app was created to search for orphanages in a city using a map, see details of operation and register new orphanages.
+
 To run application, follow one of the steps bellow.
 
 **1- Using Docker**
