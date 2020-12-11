@@ -1,6 +1,8 @@
 # Home
 Application created for study the Javascript stack (Node.js, React and React Native)
 
+To run application, follow one of the steps bellow.
+
 **1- Using Docker**
 
 In this step, Docker and Docker Compose are required. To install Docker,
