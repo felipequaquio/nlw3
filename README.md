@@ -1,9 +1,6 @@
 # Home
 Application created for study the Javascript stack (Node.js, React and React Native)
 
-To run application, copy and paste .env.example file and rename to .env, and setting
-the variables values. After this, follow one of the two steps bellow:
-
 **1- Using Docker**
 
 In this step, Docker and Docker Compose are required. To install Docker,

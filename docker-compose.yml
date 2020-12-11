@@ -4,7 +4,7 @@ services:
     build:
       context: ./backend
     ports:
-      - "${LOCAL_SERVER_PORT}:${CONTAINER_SERVER_PORT}"
+      - "3333:3333"
     volumes:
       - ./backend:/app
       - nodemodulesserver:/app/node_modules
@@ -15,7 +15,7 @@ services:
     build:
       context: ./web
     ports:
-      - "${LOCAL_WEB_INTERFACE_PORT}:${CONTAINER_WEB_INTERFACE_PORT}"
+      - "3000:3000"
     stdin_open: true
     volumes:
       - ./web:/app

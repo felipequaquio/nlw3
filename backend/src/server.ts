@@ -1,4 +1,3 @@
-import * as dotenv from 'dotenv'
 import express from 'express'
 import 'express-async-errors'
 import './database/connection'
@@ -6,8 +5,6 @@ import routes from './routes/routes'
 import path from 'path'
 import errorHandler from './errors/handler'
 import cors from 'cors'
-
-dotenv.config({ path: `${__dirname}/../../.env` })
 
 const app = express()
 
@@ -17,4 +14,4 @@ app.use(routes)
 app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')))
 app.use(errorHandler)
 
-app.listen(process.env.LOCAL_SERVER_PORT)
+app.listen(3333)
