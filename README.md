@@ -3,7 +3,11 @@ Application created for study the Javascript stack (Node.js, React and React Nat
 
 This app was created to search for orphanages in a city using a map, see details of operation and register new orphanages.
 
-To run application, follow one of the steps bellow.
+Before running the application, duplicate each .env.example file (in the root folder, the backend folder and the web folder) and rename it to .env. Change all variables according your operational system and personal settings.
+
+**Important: instructions for setting the environment variables are in each .env.example file. The variables must be the same as in the .env file in the project's root folder.**
+
+After seting the variables in the .env file, follow one of the steps bellow.
 
 **1- Using Docker**
 

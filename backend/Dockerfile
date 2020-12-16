@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package*.json ./
 RUN yarn install
 COPY . .
-EXPOSE 3333
+EXPOSE ${LOCAL_SERVER_PORT}
 CMD yarn typeorm migration:run ; yarn dev
