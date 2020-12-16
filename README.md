@@ -7,7 +7,9 @@ Before running the application, duplicate each .env.example file (in the root fo
 
 **Important: instructions for setting the environment variables are in each .env.example file. The variables must be the same as in the .env file in the project's root folder.**
 
-After seting the variables in the .env file, follow one of the steps bellow.
+**- NOTE: It is recommended to run each project, web interface and server, separately, with their own security and environment settings. Both are running in the same repository for example and study purposes.**
+
+After setting the variables in the .env file, follow one of the steps bellow.
 
 **1- Using Docker**
 
